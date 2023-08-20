@@ -4,13 +4,28 @@
 
 #  Módulo: Data Engineering with Python
 
-Entrega del proyecto Puesta en producción de pipelines & Proyecto utilizando Microsoft Azure y Azure Data Factory.
+- Entrega del proyecto Puesta en producción de pipelines & Proyecto utilizando Microsoft Azure y Azure Data Factory.
+
+- Para nuestro ejercicio practico se crearon 2 cuentas de almacenamiento, la primera emulado el ambiente On-premise y otro emulando el ambiente Datalake
+  y se agregaron los archivos en la cuenta de almacenamiento On-premise para ser ingestados con La Factoria de datos.
+
+* archivos CSV en almacenado en las cuentas de almacenamiento.
+cases_deaths.csv
+country_response.csv
+
+* ambiente On-premise 
+Storage: storagecovidbs
+Contenedor: populationbs
+
+* ambiente Datalake 
+Storage: storagecoviddlake
+Contenedor: raw
+
 
 # Documentación:
 
 ## Configuración previa:
 - Antes de comenzar, asegúrate de tener una cuenta de Azure y acceso a Azure Data Factory. 
-- También necesitarás tener el archivo CSV "Datosaln.csv" almacenado en tu Azure Data Store.
 
 ## 1 Paso: Configuración Grupo de recursos
 - Un grupo de recursos es un contenedor que almacena los recursos relacionados con una solución de Azure. 
@@ -41,15 +56,6 @@ altamente disponibles, seguros y escalables a gran escala.
 5. En siguientes tabs de "Opciones avanzadas", "Redes", "protección de datos”, “Cifrado" y "Etiquetas" se dejan por defecto como están para este proyecto de práctica.
 6. En el tab de Revisar y crear, si todos los valores están correctos te dejara crear la cuenta de almacenamiento. 
 
-- Para nuestro ejercicio practico se crearon 2 cuentas de almacenamiento, la primera emulado el ambiente On-premise y otro emulando el ambiente Datalake
-
-ambiente On-premise 
-Storage: storagecovidbs
-Contenedor: populationbs
-
-ambiente Datalake 
-Storage: storagecoviddlake
-Contenedor: raw
 
 ### 3 Paso: Crear Factorías de datos**
 
