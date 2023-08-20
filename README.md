@@ -6,23 +6,32 @@
 
 - Entrega del proyecto Puesta en producción de pipelines & Proyecto utilizando Microsoft Azure y Azure Data Factory.
 
-- Para nuestro ejercicio practico se crearon 2 cuentas de almacenamiento, la primera emulado el ambiente On-premise y otro emulando el ambiente Datalake
+- Enunciado: Se debe llevar a cabo la ingesta de dos archivos csv de un ambiente on-premise a un ambiente Datalake ambos emulados.
+
+- Para nuestro ejercicio practico se crearon dos cuentas de almacenamiento, la primera emulado el ambiente On-premise y otro emulando el ambiente Datalake
   y se agregaron los archivos en la cuenta de almacenamiento On-premise para ser ingestados con La Factoria de datos.
 
-* archivos CSV en almacenado en las cuentas de almacenamiento.
+* Archivos CSV.
 cases_deaths.csv
 country_response.csv
 
-* ambiente On-premise 
+* Ambiente On-premise 
 Storage: storagecovidbs
 Contenedor: populationbs
+Linkes:	linked ls_blob_covidresult1
+DataSet: ds_covidresult1_population_ds
 
-* ambiente Datalake 
+* Ambiente Datalake 
 Storage: storagecoviddlake
 Contenedor: raw
+DataFactory: storagecovidresult1dlake
+Linkes:	linked ls_raw_covidresult1
+DataSet: ds_covidresult1_dlake_raw_countrys_dl
 
+* Pipilenes: 
+pl_ingesta_covidresult1_bs_dl
 
-# Documentación:
+## El paso a paso en la ingesta de datos a partir de archivos csv:
 
 ## Configuración previa:
 - Antes de comenzar, asegúrate de tener una cuenta de Azure y acceso a Azure Data Factory. 
