@@ -12,24 +12,27 @@
   y se agregaron los archivos en la cuenta de almacenamiento On-premise para ser ingestados con La Factoria de datos.
 
 * Archivos CSV.
-cases_deaths.csv
-country_response.csv
+	- cases_deaths.csv
+	- country_response.csv
 
 * Ambiente On-premise 
-Storage: storagecovidbs
-Contenedor: populationbs
-Linkes:	linked ls_blob_covidresult1
-DataSet: ds_covidresult1_population_ds
+	- Storage: storagecovidbs
+	- Contenedor: populationbs
+	- Linkes:	linked ls_blob_covidresult1
+	- DataSet: ds_covidresult1_population_ds
 
 * Ambiente Datalake 
-Storage: storagecoviddlake
-Contenedor: raw
-DataFactory: storagecovidresult1dlake
-Linkes:	linked ls_raw_covidresult1
-DataSet: ds_covidresult1_dlake_raw_countrys_dl
+	- Storage: storagecoviddlake
+	- Contenedor: raw
+	- DataFactory: storagecovidresult1dlake
+	- Linkes:	linked ls_raw_covidresult1
+	- DataSet: ds_covidresult1_dlake_raw_countrys_dl
 
 * Pipilenes: 
-pl_ingesta_covidresult1_bs_dl
+	- pl_ingesta_covidresult1_bs_dl
+	
+https://github.com/Allan36922/Modulo4_DataEng/blob/main/imgs/10-Corrida%20exitosa.png
+	
 
 ## El paso a paso en la ingesta de datos a partir de archivos csv:
 
