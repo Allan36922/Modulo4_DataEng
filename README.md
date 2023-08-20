@@ -33,7 +33,7 @@
 	
 
 
-<span>![</span><span>Pipilene de ingesta de datos</span><span>]</span><span>(</span><span>https://github.com/Allan36922/Modulo4_DataEng/blob/main/imgs/10-Corrida%20exitosa.png</span><span>)</span>
+![Pipilene de ingesta de datos](https://github.com/Allan36922/Modulo4_DataEng/blob/main/imgs/10-Corrida%20exitosa.png)
 	
 
 ## El paso a paso en la ingesta de datos a partir de archivos csv:
